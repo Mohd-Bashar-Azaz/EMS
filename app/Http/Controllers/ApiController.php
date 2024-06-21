@@ -1,5 +1,5 @@
 <?php
-
+// this controller is for users table
 namespace App\Http\Controllers;
 
 // use App\Models\Image;
