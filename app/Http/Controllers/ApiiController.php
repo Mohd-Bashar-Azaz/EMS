@@ -1,5 +1,5 @@
 <?php
-
+// this controller is for employees table
 namespace App\Http\Controllers;
 
 
