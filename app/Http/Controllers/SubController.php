@@ -1,5 +1,5 @@
 <?php
-
+// this controller is for datas table (which represents personal info of the employee)
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Validator;
@@ -27,6 +27,10 @@ class SubController
     /**
      * Show the form for creating a new resource.
      */
+    // this create function doesnt work properly as it gets the error employee_id not found 
+    // but it creates employee_id =id(of employees table) after that,and you can create personal
+    // info of the employee you want to after clicking P~id ->(gets error) then by clicking more info button
+    // and then edit button 
     public function create($employeeId)
     {
         $datas = Datas::where('employee_id', $employeeId)->first();
